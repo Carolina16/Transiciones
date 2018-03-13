@@ -58,7 +58,7 @@ a:hover{
     margin: auto;
     background-color: #000000;
     transition-duration: 1s;
-    transition-property: widht,height,background-color,border;
+    transition-property: width,height,background-color,border;
     transition-delay: 0s,1s,2s,3s,4s; 
 }
 .b1:hover{
@@ -69,45 +69,48 @@ a:hover{
     box-sizing: border-box;
 }
 section{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
     width: 200px;
     height: 200px;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
     background-color: #AF1212;
-    transition-duration: 0.5s;
-    transition-property: widht,height,background-color;
-    transition-delay: 0s,0s,1s; 
+    transition-duration: 1s;
+    transition-property: width,height,background-color;
+    transition-delay: 0s,1s,2s; 
 }
-section div{
+div{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     margin: auto;
+    position: absolute;
     background-color: #136E26;
-    transition-duration: 2s;
-    transition-property: widht,height,background-color,border-radius;
-    transition-delay: 2s,2s,3s,4s; 
+    transition-duration: 1s;
+    transition-property: width,height,border-radius,background-color;
+    transition-delay: 3s,4s,5s,6s; 
+    
+    
 }
 section:hover{
     width: 300px;
     height: 300px;
     background-color: yellow;
 }
-section:hover div{
+section div:hover{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    box-sizing: border-box;
     background-color: blue;
 }
-header{
+header{ 
     width: 300px;
     height: 300px;
     position: absolute;
@@ -117,52 +120,212 @@ header{
     bottom: 0;
     margin: auto;
     background-color: #136E26;
-    transition-duration: 1s;
-    transition-property: widht,height,background-color;
+    transition-duration: 2s;
+    transition-property: width,height,background-color;
     transition-delay: 0s,1s,2s; 
 }
-.c1{
+header>nav:nth-child(1){    
     width: 100px;
     height: 100px;
     position: absolute;
     top: 0;
     left: 0;
-    margin: 0;
+    margin: auto;
     background-color:#0C0E9C;
-    transition-duration: 2s;
+    transition-duration: 3s;
     transition-property: left, border-radius,background-color;
-    transition-delay: 3s,3s,4s,5s; 
+    transition-delay: 3s,3s,4s,4s; 
 }
-.c2{
+header>nav:nth-child(2){
     width: 100px;
     height: 100px;
     position: absolute;
-    right: 0;
     bottom: 0;
-    margin: 0;
+    right: 0;
+    margin: auto;
     background-color:#0C0E9C;
-    transition-duration: 2s;
+    transition-duration: 3s;
     transition-property: right,border-radius,background-color;
-    transition-delay: 3s,3s,4s,5s; 
+    transition-delay: 3s,3s,4s,4s; 
 }
 header:hover{
     width: 400px;
     height: 400px;
     background-color: yellow;
 }
-.c1{
+header:hover>nav:nth-child(1){
+    margin: auto;
     width: 100px;
     height: 100px;
-    margin: auto;
-    left: 80px;
+    left: 60px;
     border-radius: 50%;
     background-color: #AF1212;
 }
-.c2{
+header:hover>nav:nth-child(2){
     width: 100px;
-    height: 100px;
+    height:100px;
     margin: auto;
-    left: 80px;
+    right: 60px;
+    border-radius: 50%;
+    background-color: purple;
+}
+footer{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: black;
+    transition-duration: 2s;
+    transition-property: width,height,background-color;
+    transition-delay: 0s,1s,2s; 
+}
+footer>main:nth-child(1){
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    background-color:purple;
+    transition-duration: 2s;
+    transition-property: bottom,left,border-radius,background-color;
+    transition-delay: 4s,5s,6s,7s; 
+}
+footer>main:nth-child(2){
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color:purple;
+    transition-duration: 2s;
+    transition-property: border-radius,background-color;
+    transition-delay: 8s,9s;
+}
+footer>main:nth-child(3){
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color:purple;
+    transition-duration: 4s;
+    transition-property: top, right,border-radius,background-color;
+    transition-delay:4s,5s,6s,7s;  
+}
+footer:hover{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+}
+footer:hover>main:nth-child(1){
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    background-color: purple;
+}
+footer:hover>main:nth-child(2){
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #AF1212;
+}
+footer:hover>main:nth-child(3){
+    width: 80px;
+    height:80px;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 50%;
+    background-color: purple;
+}
+.cuadro{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #20C220;
+    transition-duration: 2s;
+    transition-property: width,height,border-top, border-right, border-bottom, border-left,background-color;
+    transition-delay: 1s,1s,2s,3s,4s,5s,6s;    
+}
+.cuadro1{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background-color: black;
+    transition-duration: 2s;
+    transition-property: left,top ,border-radius,background-color;
+    transition-delay:8s,9s,10s; 
+}
+.cuadro2{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;  
+    right: 0;
+    margin: auto;
+    background-color: black;
+}
+.cuadro3{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: black;
+}
+.cuadro4{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: black;
+}
+.cuadro5{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: black;
+}
+.cuadro:hover{
+    width: 400px;
+    height: 400px;
+    border-top: 3px solid purple;
+    border-right: 3px solid red;
+    border-bottom: 3px solid green;
+    border-left: 3px solid blue;
+    background-color: yellow;
+}
+.cuadro .cuadro1:hover{
+    width: 80px;
+    height:80px;
+    top: 20px;
+    right: 20px;
     border-radius: 50%;
     background-color: purple;
 }
